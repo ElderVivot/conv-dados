@@ -3,7 +3,7 @@ import tools.leArquivos as leArquivos
 
 from PIL import Image
 
-def imageToText(arquivos=leArquivos.buscaArquivosEmPasta(caminho="D:\\programming\\conv-dominio\\imgs-teste\\webcon", extensao=(".jpg", ".jpeg"))):
+def imageToText(arquivos=leArquivos.buscaArquivosEmPasta(caminho="C:\\_temp\\teste-ler-img", extensao=(".jpg", ".jpeg"))):
     print(arquivos)
     for arquivo in arquivos:
         nome_arquivo_saida = str(arquivo) + ".txt"
@@ -14,4 +14,3 @@ def imageToText(arquivos=leArquivos.buscaArquivosEmPasta(caminho="D:\\programmin
         saida.close()
 
 imageToText()
-
